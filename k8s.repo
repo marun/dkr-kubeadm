@@ -1,0 +1,5 @@
+[kubelet]
+name=kubelet
+baseurl=http://files.rm-rf.ca/rpms/kubelet/
+enabled=1
+gpgcheck=0
