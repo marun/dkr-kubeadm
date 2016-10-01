@@ -27,6 +27,14 @@ RUN dnf -y update && dnf -y install\
  kubelet\
  kubectl\
  kubernetes-cni\
+ bind-utils\
+ findutils\
+ hostname\
+ htop\
+ iproute\
+ iputils\
+ procps-ng\
+ which\
  && dnf clean all
 
 RUN systemctl enable kubelet
