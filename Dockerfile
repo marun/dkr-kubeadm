@@ -2,7 +2,7 @@
 # Image configured with systemd, docker-in-docker and kubeadm.  Useful
 # for simulating multinode Kubernetes deployments.
 #
-# The standard name for this image is maru/systemd-kubeadm
+# The standard name for this image is maru/kubeadm
 #
 # Notes:
 #
@@ -15,7 +15,7 @@
 #
 #  - run with --privileged
 #
-#      $ docker run -d --privileged maru/systemd-kubeadm
+#      $ docker run -d --privileged maru/kubeadm
 #
 
 FROM maru/systemd-dind
