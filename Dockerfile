@@ -22,11 +22,11 @@ FROM maru/systemd-dind
 
 ADD k8s.repo /etc/yum.repos.d/
 
-RUN yum -y update && yum -y install\
+RUN dnf -y update && dnf -y install\
  kubeadm\
  kubelet\
  kubectl\
  kubernetes-cni\
- && yum clean all
+ && dnf clean all
 
 RUN systemctl enable kubelet
