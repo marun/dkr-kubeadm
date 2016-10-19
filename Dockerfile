@@ -28,6 +28,7 @@ RUN dnf -y update && dnf -y install\
  kubectl\
  kubernetes-cni\
  bind-utils\
+ ebtables\
  findutils\
  hostname\
  htop\
@@ -38,3 +39,6 @@ RUN dnf -y update && dnf -y install\
  && dnf clean all
 
 RUN systemctl enable kubelet
+
+# kubeadm requires /etc/kubernetes to be empty
+RUN rmdir /etc/kubernetes/manifests
