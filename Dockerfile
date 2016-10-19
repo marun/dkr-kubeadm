@@ -34,6 +34,8 @@ RUN dnf -y update && dnf -y install\
  htop\
  iproute\
  iputils\
+ less\
+ net-tools\
  procps-ng\
  which\
  && dnf clean all
