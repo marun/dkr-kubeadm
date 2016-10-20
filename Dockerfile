@@ -44,3 +44,7 @@ RUN systemctl enable kubelet
 
 # kubeadm requires /etc/kubernetes to be empty
 RUN rmdir /etc/kubernetes/manifests
+
+# Docker requires /run have shared propagation in order to start the
+# kube-proxy container.
+RUN echo 'mount --make-shared /run' >> /usr/local/bin/dind-setup.sh
