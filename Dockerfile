@@ -28,6 +28,7 @@ RUN dnf -y update && dnf -y install\
  kubectl\
  kubernetes-cni\
  bind-utils\
+ bridge-utils\
  ebtables\
  findutils\
  hostname\
@@ -37,6 +38,8 @@ RUN dnf -y update && dnf -y install\
  less\
  net-tools\
  procps-ng\
+ tcpdump\
+ traceroute\
  which\
  && dnf clean all
 
